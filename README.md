@@ -29,7 +29,7 @@ Tutorial de testes end-to-end com o [e2e](https://e2e.tester.army) para iniciant
 
 Aqui você vai do ambiente instalado até rodar a suíte em CI, passando por locators, esperas, Page Object, credenciais, agente de IA e aparelhos físicos.
 
-> O projeto de exemplo está na raiz deste repositório (`package.json`, `e2e.config.ts`, `tests/`). Clone, rode `npm install` e `npx e2e run --target web`: os testes passam sem você precisar de app nenhum.
+> O projeto de exemplo está na pasta [`exemplo/`](exemplo/) deste repositório (`package.json`, `e2e.config.ts`, `tests/`). Clone, entre em `exemplo/`, rode `npm install` e `npx e2e run --target web`: os testes passam sem você precisar de app nenhum.
 
 <!-- ROADMAP OF PROJECT -->
 ## ROADMAP

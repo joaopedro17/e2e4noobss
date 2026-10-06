@@ -49,11 +49,12 @@ Use nomes de branch descritivos:
 - `await` em toda ação e asserção de locator
 - Nenhum `sleep`/`setTimeout` para esperar a tela: use asserções com `timeout`
 - Senhas sempre via `credentials`, nunca no código
-- Exemplos que dá para rodar devem rodar: o projeto da raiz precisa continuar passando
+- Exemplos que dá para rodar devem rodar: o projeto em `exemplo/` precisa continuar passando
 
 ### 4. Confira antes de abrir o PR
 
 ```bash
+cd exemplo
 npm install
 npx tsc -p .
 npx e2e run --target web
@@ -91,9 +92,10 @@ e2e4noobs/
 ├── 4-Intermediario/    # Page Object, esperas, credenciais, agente de IA, cache
 ├── 5-Avancado/         # Aparelhos reais, paralelismo, CI/CD, debug e relatórios
 ├── images/             # Imagens usadas nas páginas
-├── tests/              # Testes de exemplo (rodam com npx e2e run)
-├── e2e.config.ts       # Configuração do projeto de exemplo
-├── package.json        # Dependências do projeto de exemplo
+├── exemplo/            # Projeto de exemplo (testes, config, dependências)
+│   ├── tests/          # Testes de exemplo (rodam com npx e2e run)
+│   ├── e2e.config.ts   # Configuração do projeto de exemplo
+│   └── package.json    # Dependências do projeto de exemplo
 └── CONTRIBUTING.md     # Este arquivo
 ```
 
