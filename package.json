@@ -1,0 +1,21 @@
+{
+  "name": "e2e4noobs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Projeto de exemplo do e2e4noobs: testes end-to-end com o e2e (web e mobile)",
+  "type": "module",
+  "scripts": {
+    "test:e2e": "e2e run",
+    "test:web": "e2e run --target web",
+    "test:ios": "e2e run --target ios",
+    "test:android": "e2e run --target android"
+  },
+  "devDependencies": {
+    "@e2e-dev/mobile": "^0.10.0",
+    "@e2e-dev/web": "^0.13.0",
+    "@types/node": "^24.0.0",
+    "ai": "^7.0.0",
+    "e2e": "^0.18.0",
+    "zod": "^4.1.8"
+  }
+}
